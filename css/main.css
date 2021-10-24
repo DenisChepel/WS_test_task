@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #E5E5E5;
+}
+
+/* Header */
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head_i{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.vector{
+    width: 100%;
+    height: auto;
+}
+.header_main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 172px;
+    width: 100%;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.67);;
+    z-index: 1;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12), inset 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+.head_content{
+    width: 400px;
+    max-width: 100%;
+}
+.logo_block{
+    margin-right: 86px;
+}
+.logo{
+    width: 138px;
+    height: 138px;
+}
+.hc_block{
+    display: flex;
+    align-items: center;
+}
+.m_title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.start_hint{
+    border: 1px solid #3D8EDA;
+    color: #3D8EDA;
+    width: 135px;
+    height: 28px;
+    margin-left: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.03em;
+    padding: 6px 12px 7px;
+}
+.info_item{
+    display: flex;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin: 16px 17px 16px 0;
+}
+.count{
+    margin-right: 5px;
+    font-weight: bold;
+}
+.d_title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 11px;
+}
+/* Header */
+
+/* Date Picker */
+.picker_wrap{
+    position: relative;
+    display: flex;
+}
+.picker{
+    height: 26px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding: 0 0 0 5px;
+    outline: none;
+    margin-right: 10px;
+    background: white;
+}
+#from + .ui-datepicker-trigger{
+    position: absolute;
+    right: 197px;
+    background: #dcdcdc;
+    top: 1px;
+    cursor: pointer;
+}
+#to + .ui-datepicker-trigger{
+    position: absolute;
+    right: 11px;
+    background: #dcdcdc;
+    top: 1px;
+    cursor: pointer;
+}
+.ui-datepicker{
+    z-index: 11!important;
+}
+/* Date Picker */
+
+/* Main Body */
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 10;
+}
+.theme{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 890px;
+    max-width: 100%;
+    height: 65px;
+}
+#grid{
+    cursor: pointer;
+}
+#row{
+    cursor: pointer;
+}
+#grid_active{
+    display: block;
+}
+#grid_dis{
+    display: none;
+}
+#row_active{
+    display: none;
+}
+#row_dis{
+    display: block;
+}
+.theme svg{
+    margin-right: 21px;
+}
+
+/* Card - GRID */
+.main_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    max-width: 100%;
+    height: auto;
+}
+.sub_wrap{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+}
+.card {
+    margin: 8px 8px;
+    width: 203px;
+    max-width: 100%;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow:  0 0 15px gray;
+}
+.card:active{
+    transition: all 1s ease-in-out;
+    transform: scale(0.9) rotateZ(360deg);
+}
+.ci_block{
+    height: auto;
+    width: auto;
+}
+.card_img{
+    width: 203px;
+    height: 203px;
+}
+.act{
+    display: flex;
+    flex-direction: column;
+}
+.card_content{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding: 12px 12px 18px;
+    flex-wrap: wrap;
+}
+.left_col,.right_col p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+.card_raw_item{
+    display: flex;
+    margin: 7px;
+}
+.card_raw_item svg{
+    margin-right: 7px;
+}
+.card_raw_item p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.card_bot{
+    display: flex;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+.card_bot > p:first-child{
+    display: block;
+    margin-right: 15px;
+}
+/* Card - GRID */
+
+
+/* Card - ROW */
+.main_wrap_row{
+    width: 100%;
+    flex-direction: column;
+}
+.row{
+    width: 730px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.ci_block_row{
+    height: 86px;
+    width: auto;
+}
+.cb_row{
+    flex-direction: column;
+    margin-top: 0;
+}
+.cb_row > p:first-child{
+    margin-bottom: 8px;
+}
+.ci_row{
+    width: 86px;
+    height: 86px;
+}
+.act_row{
+    display: flex;
+    flex-direction: row;
+}
+.sub_wrap_row{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+/* Card - ROW */
+
+.load_block{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+.load_btn{
+    width: 111px;
+    height: 28px;
+    border: 1px solid #929292;
+    box-sizing: border-box;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.load_btn:hover{
+    background: transparent;
+    box-shadow: 0 0 10px #216962;
+}
+/* Main Body */
+
+
+/* Footer */
+footer{
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    position: relative;
+}
+.footer_i{
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    z-index: 0;
+}
+/* Footer */
+
+
+
+/* Media */
+
+@media screen and (max-width: 870px){
+    .main_wrap{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 650px){
+    .header_main{
+        flex-direction: column;
+        padding: 20px 0;
+        height: auto;
+    }
+    .logo_block{
+        margin: 0;
+    }
+    .head_content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 454px){
+    .card_content{
+        justify-content: start;
+    }
+    .cb_row{
+        margin-top: 15px;
+    }
+    .ci_row{
+        width: 134px;
+        height: 134px;
+    }
+    .card_raw_item{
+        margin: 7px 7px 7px 0;
+    }
+    .left_col{
+        margin-right: 10px;
+    }
+    .logo{
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .sub_wrap{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hc_block{
+        flex-direction: column;
+    }
+    .info_item {
+        margin: 10px 0px 5px 0;
+    }
+    .picker_wrap{
+        flex-direction: column;
+    }
+    #to{
+        order: 1;
+    }
+    #from{
+        order: 2;
+    }
+    .d_title{
+        margin: 15px 0 7px 0;
+    }
+    .picker{
+        margin: 5px 0 0 0;
+    }
+    #to + .ui-datepicker-trigger {
+        right: 1px;
+        top: 6px;
+    }
+    #from + .ui-datepicker-trigger {
+        right: 1px;
+        top: 37px;
+    }
+}
+@media screen and (max-width: 380px){
+    .card_content{
+        text-align: center;
+        flex-direction: column;
+    }
+    .right_col{
+        margin-top: 10px;
+    }
+    .act_row{
+        justify-content: center;
+    }
+    .cb_row{
+        margin-top: 5px;
+    }
+    .ci_row{
+        width: 180px;
+        height: 183px;
+    }
+    .act{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logo{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+/* Media */
