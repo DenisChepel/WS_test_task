@@ -116,7 +116,7 @@ switch_row.addEventListener('click', function(){
 })
 
 
-// SWITCH THEME Решение в две функции на jQuery
+// SWITCH THEME Решение на jQuery
 /*
 
 $(function () {
